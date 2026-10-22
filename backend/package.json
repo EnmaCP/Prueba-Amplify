@@ -1,0 +1,24 @@
+{
+  "name": "festival-backend-dynamodb",
+  "version": "1.0.0",
+  "description": "Backend API REST con Express y AWS DynamoDB para Festival Control",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "seed": "node src/seed.js",
+    "init-table": "node src/initTable.js"
+  },
+  "keywords": ["express", "dynamodb", "aws", "festival-control"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.758.0",
+    "@aws-sdk/lib-dynamodb": "^3.758.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  }
+}
+
